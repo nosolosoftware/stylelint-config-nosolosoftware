@@ -1,0 +1,37 @@
+{
+  "name": "stylelint-config-nosolosoftware",
+  "version": "0.1.0",
+  "description": "nosolosoftware shareable config for stylelint",
+  "keywords": [
+    "code",
+    "code style",
+    "css",
+    "linting",
+    "stylelint",
+    "stylelint-config"
+  ],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/nosolosoftware/stylelint-config-nosolosoftware.git"
+  },
+  "homepage": "https://github.com/nosolosoftware/stylelint-config-nosolosoftware",
+  "bugs": "https://github.com/nosolosoftware/stylelint-config-nosolosoftware/issues",
+  "main": "index.js",
+  "files": [
+    "CHANGELOG.md",
+    "LICENSE",
+    "index.js"
+  ],
+  "dependencies": {
+    "stylelint": "13.8.0",
+    "stylelint-config-recess-order": "^2.3.0",
+    "stylelint-config-sass-guidelines": "^7.1.0"
+  },
+  "devDependencies": {
+    "eslint": "^7.14.0",
+    "eslint-config-airbnb-base": "^14.2.1",
+    "eslint-config-nosolosoftware": "^3.0.0",
+    "eslint-plugin-import": "^2.22.1"
+  }
+}
