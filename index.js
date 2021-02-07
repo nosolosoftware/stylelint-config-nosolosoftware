@@ -22,12 +22,13 @@ module.exports = {
     'selector-pseudo-class-no-unknown': true,
     'selector-pseudo-element-no-unknown': true,
     'length-zero-no-unit': true,
-    linebreaks: 'unix',
+    'linebreaks': 'unix',
     'no-empty-first-line': true,
     'selector-no-vendor-prefix': [
       true,
       {
         ignoreSelectors: [
+          '/-moz-.*/',
           '/-webkit-.*/'
         ]
       }
@@ -38,6 +39,7 @@ module.exports = {
         ignoreProperties: [
           '/animation.*/',
           '/transition.*/',
+          '/transform.*/',
           '/box-shadow.*/'
         ]
       }
@@ -46,8 +48,7 @@ module.exports = {
       true,
       {
         ignoreValues: [
-          '/linear-gradient.*/',
-          '/transform.*/'
+          '/linear-gradient.*/'
         ]
       }
     ],
