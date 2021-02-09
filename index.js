@@ -28,6 +28,7 @@ module.exports = {
       true,
       {
         ignoreSelectors: [
+          '/-moz-.*/',
           '/-webkit-.*/'
         ]
       }
@@ -38,6 +39,7 @@ module.exports = {
         ignoreProperties: [
           '/animation.*/',
           '/transition.*/',
+          '/transform.*/',
           '/box-shadow.*/'
         ]
       }
@@ -46,8 +48,7 @@ module.exports = {
       true,
       {
         ignoreValues: [
-          '/linear-gradient.*/',
-          '/transform.*/'
+          '/linear-gradient.*/'
         ]
       }
     ],
