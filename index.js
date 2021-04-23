@@ -24,6 +24,7 @@ module.exports = {
     'length-zero-no-unit': true,
     linebreaks: 'unix',
     'no-empty-first-line': true,
+    'color-hex-case': 'upper',
     'selector-no-vendor-prefix': [
       true,
       {
@@ -40,7 +41,9 @@ module.exports = {
           '/animation.*/',
           '/transition.*/',
           '/transform.*/',
-          '/box-shadow.*/'
+          '/box-shadow.*/',
+          '/appearance.*/',
+          '/filter.*/'
         ]
       }
     ],
