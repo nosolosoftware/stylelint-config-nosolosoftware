@@ -1,14 +1,22 @@
 module.exports = {
   extends: [
     'stylelint-config-sass-guidelines',
+    'stylelint-config-standard-scss',
     'stylelint-config-recess-order'
   ],
   ignoreFiles: [
     'src/scss/assets/**/*'
   ],
   rules: {
+    'no-invalid-position-at-import-rule': null,
+    'at-rule-empty-line-before': null,
+    'no-descending-specificity': null,
+    'declaration-empty-line-before': null,
     'scss/dollar-variable-pattern': null,
     'scss/at-function-pattern': null,
+    'scss/double-slash-comment-whitespace-inside': null,
+    'scss/dollar-variable-empty-line-before': null,
+    'scss/double-slash-comment-empty-line-before': null,
     'selector-class-pattern': '^[a-z]([a-z0-9-]+)?(__([a-z0-9]+-?)+)?(--([a-z0-9]+-?)+){0,2}$',
     'scss/dollar-variable-colon-space-after': 'at-least-one-space',
     'order/properties-alphabetical-order': null,
@@ -24,6 +32,8 @@ module.exports = {
     'length-zero-no-unit': true,
     linebreaks: 'unix',
     'no-empty-first-line': true,
+    'color-hex-case': 'upper',
+    'max-empty-lines': 2,
     'selector-no-vendor-prefix': [
       true,
       {
@@ -38,9 +48,11 @@ module.exports = {
       {
         ignoreProperties: [
           '/animation.*/',
-          '/transition.*/',
+          '/appearance.*/',
+          '/box-shadow.*/',
+          '/filter.*/',
           '/transform.*/',
-          '/box-shadow.*/'
+          '/transition.*/'
         ]
       }
     ],
