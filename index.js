@@ -4,9 +4,6 @@ module.exports = {
     'stylelint-config-standard-scss',
     'stylelint-config-recess-order'
   ],
-  ignoreFiles: [
-    'src/scss/assets/**/*'
-  ],
   rules: {
     'no-invalid-position-at-import-rule': null,
     'at-rule-empty-line-before': null,
@@ -20,20 +17,13 @@ module.exports = {
     'selector-class-pattern': '^[a-z]([a-z0-9-]+)?(__([a-z0-9]+-?)+)?(--([a-z0-9]+-?)+){0,2}$',
     'scss/dollar-variable-colon-space-after': 'at-least-one-space',
     'order/properties-alphabetical-order': null,
-    'number-leading-zero': 'never',
     'selector-pseudo-element-colon-notation': 'single',
     'max-nesting-depth': 3,
     'selector-max-compound-selectors': 4,
-    'no-eol-whitespace': true,
-    'no-extra-semicolons': true,
     'block-no-empty': true,
     'selector-pseudo-class-no-unknown': true,
     'selector-pseudo-element-no-unknown': true,
     'length-zero-no-unit': true,
-    linebreaks: 'unix',
-    'no-empty-first-line': true,
-    'color-hex-case': 'upper',
-    'max-empty-lines': 2,
     'selector-no-vendor-prefix': [
       true,
       {
@@ -77,14 +67,6 @@ module.exports = {
       {
         ignore: [
           'inside-function'
-        ]
-      }
-    ],
-    indentation: [
-      2,
-      {
-        ignore: [
-          'value'
         ]
       }
     ],
