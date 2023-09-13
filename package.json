@@ -1,6 +1,6 @@
 {
   "name": "stylelint-config-nosolosoftware",
-  "version": "1.0.0-beta.1",
+  "version": "1.0.0",
   "description": "nosolosoftware shareable config for stylelint",
   "keywords": [
     "code",
